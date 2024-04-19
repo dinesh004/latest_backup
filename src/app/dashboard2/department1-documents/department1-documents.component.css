@@ -1,0 +1,100 @@
+
+
+#exampleModal2 .modal-content {
+  zoom: 1;
+}
+
+/* Optional: Make sure modal is displayed fullscreen */
+#exampleModal2 .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#exampleModal .modal-content {
+  zoom: 1;
+}
+
+/* Optional: Make sure modal is displayed fullscreen */
+#exampleModal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+:host {
+  margin: 0;
+  padding: 0;
+}
+/* Set A4 size */
+.printable-form {
+  width: 210mm;
+  height: 297mm;
+  background-color: #f4f4f4;
+  padding: 20mm;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally */
+}
+
+
+/* Form title */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10mm; /* Add margin between rows */
+}
+
+/* Form group */
+.form-group {
+  flex: 1; /* Distribute equal width */
+}
+
+/* Label */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px; /* Add space between label and content */
+}
+
+/* Content section */
+.content-section {
+  background-color: #fff; /* White background color for content */
+  padding: 15px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  border: 1px solid #ddd; /* Add border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  text-align: center; /* Center content */
+}
+
+/* Label section */
+.label-section {
+  background-color: #3498db; /* Blue background color for labels */
+  color: #fff; /* White text color */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  margin-bottom: 10px; /* Add margin between label sections */
+}
+
+.scrollable-div {
+
+
+  border: 1px solid #ccc; /* Example border for visual separation */
+  padding: 10px; /* Example padding */
+}
+
+.normal-div {
+  border: 1px solid #ccc; /* Example border for visual separation */
+  padding: 10px; /* Example padding */
+}

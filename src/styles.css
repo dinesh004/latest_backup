@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import 'ngx-toastr/toastr';
+
+
+html, body {
+  zoom: 0.88;
+}
+
+.navbar-custom {
+  background-color: #FBC79F; /* Replace with your desired color */
+}
+.navbar-custom1 {
+  background-color: #ADDEE4; /* Replace with your desired color */
+}

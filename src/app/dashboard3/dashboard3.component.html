@@ -1,0 +1,394 @@
+        <!-- Begin page -->
+
+        <div id="layout-wrapper">
+          <header id="page-topbar">
+            <div class="row align-items-center w-100 d-flex bg-dark"> <!-- Align items vertically -->
+              <div class="col-auto">
+                <img src="/assets/img/IMG-20240401-WA0003.jpg" alt="Logo" class="navbar-logo" style="width: 50px; height: auto;"> <!-- Replace "your-small-logo.png" with the path to your small logo -->
+              </div>
+              <div class="col">
+                <span class="navbar-text text-truncate" style="max-width: 150px; font-size: 18px; color: white;">एकात्मिक आदिवासी प्रकल्प कार्यालय</span>
+              </div>
+              <div class="col-auto ml-auto d-none d-lg-flex justify-content-end"> <!-- Hide on small screens (mobile) -->
+                <div class="mr-3">
+                  <span class="btn btn-light" (click)="adjustFontSize('-')">अ-</span>
+                </div>
+                <div class="mr-3">
+                  <span class="btn btn-light" (click)="adjustFontSize()">अ</span>
+                </div>
+                <div>
+                  <span class="btn btn-light" (click)="adjustFontSize('+')">अ+</span>
+                </div>
+              </div>
+              <div class="col-auto ml-auto d-none d-lg-flex justify-content-end">
+                <div class="mr-3">
+                  <span class="btn btn-light" (click)="toggleLanguage()">English</span>
+                </div>
+              </div>
+            </div>
+              <div class="navbar-header">
+
+                  <div class="d-flex">
+                      <!-- LOGO -->
+                      <div class="navbar-brand-box">
+                          <a href="#" class="logo logo-dark">
+                              <span class="logo-sm">
+                                  <img src="assets/images/1656521781-picsay.png" alt="logo-sm-dark" height="66">
+                              </span>
+                              <span class="logo-lg">
+                                  <img src="assets/images/1656521781-picsay.png" alt="logo-dark" height="67">
+                              </span>
+                          </a>
+
+                          <a href="#" class="logo logo-light">
+                              <span class="logo-sm">
+                                  <img src="assets/images/1656521781-picsay.png" alt="logo-sm-light" height="66">
+                              </span>
+                              <span class="logo-lg">
+                                  <img src="assets/images/1656521781-picsay.png" alt="logo-light" height="67">
+                              </span>
+                          </a>
+                      </div>
+
+                      <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                          <i class="ri-menu-2-line align-middle"></i>
+                      </button>
+
+
+
+                  </div>
+
+                  <div class="d-flex">
+
+<!-- App Search-->
+<form class="app-search d-none d-lg-block">
+  <div class="position-relative">
+      <input type="text" class="form-control" placeholder="Search...">
+      <span class="ri-search-line"></span>
+  </div>
+</form>
+
+
+
+
+                      <div class="dropdown d-inline-block d-lg-none ms-2">
+                          <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="ri-search-line"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                              aria-labelledby="page-header-search-dropdown">
+
+                              <form class="p-3">
+                                  <div class="mb-3 m-0">
+                                      <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="Search ...">
+                                          <div class="input-group-append">
+                                              <button class="btn btn-primary" type="submit"><i class="ri-search-line"></i></button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+
+
+
+
+                      <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item waves-effect"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                        alt="Header Avatar">
+                        </button>
+
+
+                      </div>
+
+
+
+                      <div class="dropdown d-inline-block">
+                          <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                              <i class="ri-settings-2-line"></i>
+                          </button>
+                      </div>
+
+                  </div>
+              </div>
+          </header>
+
+          <!-- ========== Left Sidebar Start ========== -->
+          <div class="vertical-menu">
+
+              <div data-simplebar class="h-100">
+
+                  <!--- Sidemenu -->
+                  <div id="sidebar-menu">
+
+                    <div class="user-info text-center" style="margin-top: 45px;">
+                      <div class="dropdown d-inline-block user-dropdown">
+                          <a href="" class="btn header-item" id="page-header-user-dropdown"
+                              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <!-- <img class="rounded-circle header-profile-user" *ngIf="currentUser?.profilePic" [src]="currentUser?.profilePic" alt="Profile Picture">
+                              <h6 class="text-uppercase mb-0 mt-2 pt-1">{{ currentUser?.fullName }}</h6> -->
+                          </a>
+                          <div class="dropdown-menu">
+                              <!-- item-->
+                              <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                              <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
+                              <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
+                              <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                          </div>
+                      </div>
+
+                  </div>
+
+                      <!-- Left Menu Start -->
+                      <ul class="metismenu list-unstyled pt-1" id="side-menu">
+                          <li class="menu-title">Menu</li>
+
+                          <li>
+                              <a class="waves-effect">
+                                  <i class="ri-dashboard-2-line"></i>
+                                  <span>Applications</span>
+                              </a>
+                          </li>
+
+                          <!-- <li>
+                            <a class="waves-effect">
+                                <i class="ri-dashboard-2-line"></i>
+                                <span (click)="logout()">logout</span>
+                            </a>
+                        </li> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <!-- <li class="menu-title">Pages</li>
+
+                          <li>
+                              <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                  <i class="ri-account-circle-line"></i>
+                                  <span>Authentication</span>
+                              </a>
+                              <ul class="sub-menu" aria-expanded="false">
+                                  <li><a href="#">Login</a></li>
+                                  <li><a href="#">Register</a></li>
+                                  <li><a href="#">Recover Password</a></li>
+
+                              </ul>
+                          </li>
+
+                          <li>
+                              <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                  <i class="ri-pages-line"></i>
+                                  <span>Extra Pages</span>
+                              </a>
+                              <ul class="sub-menu" aria-expanded="false">
+                                  <li><a href="#">Maintenance</a></li>
+                                  <li><a href="#">Coming Soon</a></li>
+                                  <li><a href="#">Error 404</a></li>
+
+                              </ul>
+                          </li>
+
+
+
+                          <li>
+                              <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                  <i class="ri-share-line"></i>
+                                  <span>Multi Level</span>
+                              </a>
+                              <ul class="sub-menu" aria-expanded="true">
+                                  <li><a href="javascript: void(0);">Level 1.1</a></li>
+                                  <li><a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
+                                      <ul class="sub-menu" aria-expanded="true">
+                                          <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                          <li><a href="javascript: void(0);">Level 2.2</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li> -->
+
+                      </ul>
+                  </div>
+                  <!-- Sidebar -->
+              </div>
+          </div>
+          <!-- Left Sidebar End -->
+
+
+
+          <!-- ============================================================== -->
+          <!-- Start right Content here -->
+          <!-- ============================================================== -->
+          <div class="main-content">
+
+              <div class="page-content">
+                  <div class="container-fluid">
+
+                      <!-- start page title -->
+                      <div class="row">
+                          <div class="col-12">
+                              <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                  <h4 class="mb-sm-0">Dashboard</h4>
+
+
+                              </div>
+                          </div>
+                      </div>
+                      <!-- end page title -->
+
+                      <!-- dashboard analysis card -->
+                      <!-- <div class="row">
+                          <div class="col-lg-12 col-xxl-9">
+                              <div class="row">
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <div class="d-flex flex-wrap pb-3 gap-3">
+                                                  <div class="flex-grow-1 overflow-hidden">
+                                                      <p class="text-truncate mb-2">Today Orders</p>
+                                                      <h4 class="mt-2 mb-0">32,562 <span class="badge bg-subtle-primary text-primary font-size-10 ms-1"><i class="mdi mdi-arrow-up"></i> 10%</span></h4>
+                                                  </div>
+                                                  <div class="text-primary">
+                                                      <div id="chart-mini1" class="apex-chart"></div>
+                                                  </div>
+                                              </div>
+                                              <p class="mb-0 font-size-14 fw-bold mt-2 text-truncate">126<span class="text-muted fw-normal"> ~ vs. previous month</span></p>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <div class="d-flex flex-wrap pb-3 gap-3">
+                                                  <div class="flex-grow-1 overflow-hidden">
+                                                      <p class="text-truncate mb-2">Today Visitor</p>
+                                                      <h4 class="mt-2 mb-0">26,429 <span class="badge bg-subtle-danger text-danger font-size-10 ms-1"><i class="mdi mdi-arrow-down"></i> 23%</span></h4>
+                                                  </div>
+                                                  <div class="text-primary">
+                                                      <div id="chart-mini2" class="apex-chart"></div>
+                                                  </div>
+                                              </div>
+                                              <p class="mb-0 font-size-14 fw-bold mt-2 text-truncate">568<span class="text-muted fw-normal"> ~ vs. previous month</span></p>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <div class="d-flex flex-wrap pb-3 gap-3">
+                                                  <div class="flex-grow-1 overflow-hidden">
+                                                      <p class="text-truncate mb-2">Total Expense</p>
+                                                      <h4 class="mt-2 mb-0">64,249 <span class="badge bg-subtle-primary text-primary font-size-10 ms-1"><i class="mdi mdi-arrow-up"></i> 32%</span></h4>
+                                                  </div>
+                                                  <div class="text-primary">
+                                                      <div id="chart-mini3" class="apex-chart"></div>
+                                                  </div>
+                                              </div>
+                                              <p class="mb-0 font-size-14 fw-bold mt-2 text-truncate">232<span class="text-muted fw-normal"> ~ vs. previous month</span></p>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <div class="d-flex flex-wrap pb-3 gap-3">
+                                                  <div class="flex-grow-1 overflow-hidden">
+                                                      <p class="text-truncate mb-2">New Users</p>
+                                                      <h4 class="mt-2 mb-0">52,653  <span class="badge bg-subtle-danger text-danger font-size-10 ms-1"><i class="mdi mdi-arrow-down"></i> 18%</span></h4>
+                                                  </div>
+                                                  <div class="text-primary">
+                                                      <div id="chart-mini4" class="apex-chart"></div>
+                                                  </div>
+                                              </div>
+                                              <p class="mb-0 font-size-14 fw-bold mt-2 text-truncate">235<span class="text-muted fw-normal"> ~ vs. previous month</span></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+
+
+                          </div>
+
+
+                      </div> -->
+
+                      <div>
+                        <router-outlet></router-outlet>
+                      </div>
+                      <!-- end row -->
+
+
+
+                  </div>
+                  <!-- container-fluid -->
+              </div>
+              <!-- End Page-content -->
+
+          </div>
+          <!-- end main content-->
+
+      </div>
+      <!-- END layout-wrapper -->
+
+      <!-- Right Sidebar -->
+      <div class="right-bar">
+          <div data-simplebar class="h-100">
+              <div class="rightbar-title d-flex align-items-center px-3 py-4">
+
+                  <h5 class="m-0 me-2">Settings</h5>
+
+                  <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                      <i class="mdi mdi-close noti-icon"></i>
+                  </a>
+              </div>
+
+              <!-- Settings -->
+              <hr class="mt-0" />
+              <h6 class="text-center mb-0">Choose Layouts</h6>
+
+              <div class="p-4">
+                  <div class="mb-2">
+                      <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
+                  </div>
+
+                  <div class="form-check form-switch mb-3">
+                      <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                      <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                  </div>
+
+                  <div class="mb-2">
+                      <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
+                  </div>
+                  <div class="form-check form-switch mb-3">
+                      <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
+                      <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                  </div>
+              </div>
+
+          </div> <!-- end slimscroll-menu-->
+      </div>
+      <!-- /Right-bar -->
+
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>

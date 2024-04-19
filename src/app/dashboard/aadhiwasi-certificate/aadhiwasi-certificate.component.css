@@ -1,0 +1,11 @@
+.container {
+  border: 1px solid #000; /* Black border */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  background-color: #F9F9F9;
+}
+
+sup {
+  font-size: 14px; /* Adjust size as needed */
+  color: red; /* Red color */
+}
+

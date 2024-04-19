@@ -1,0 +1,129 @@
+<h2>आदीवासी प्रमाणपत्र अर्ज</h2>
+<hr>
+
+<div class="container-fluid">
+<form [formGroup]="applicantForm" (ngSubmit)="onSubmit()" class="row g-3">
+  <div class="alert alert-secondary" role="alert">
+    Applicant Details :
+  </div>
+
+  <div class="col-md-4">
+
+    <label for="salutation1">Salutation<sup>*</sup></label>
+  <select class="form-control" name="salutation1" id="salutation1" formControlName="salutation1">
+    <option value="">---Select---</option>
+    <option value="Advocate">Advocate</option>
+    <option value="kumar">Kumar</option>
+    <option value="kumari">Kumari</option>
+    <option value="mr">Mr.</option>
+    <option value="mrs">Mrs.</option>
+    <option value="ms">Ms</option>
+    <option value="shri">Shri</option>
+    <option value="shrimati">Shrimati</option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="fullname" class="form-label">Your Full Name (English)<sup>*</sup></label>
+    <input type="text" class="form-control" id="fullname" formControlName="fullname">
+  </div>
+  <div class="col-md-4">
+    <label for="namemarathi" class="form-label">Your Full Name (Marathi)<sup>*</sup></label>
+    <input type="text" class="form-control" id="namemarathi" formControlName="namemarathi">
+  </div>
+
+
+
+  <div class="col-md-4">
+    <label for="salutation2">Salutation<sup>*</sup></label>
+  <select class="form-control" name="salutation2" id="salutation2" formControlName="salutation2">
+    <option value="mr">Mr.</option>
+    <option value="shri">Shri</option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="fathername" class="form-label">Father Name (English)<sup>*</sup></label>
+    <input type="text" class="form-control" id="fathername" formControlName="fathername">
+  </div>
+  <div class="col-md-4">
+    <label for="fathernamemarathi" class="form-label">Father Name (Marathi)<sup>*</sup></label>
+    <input type="text" class="form-control" id="fathernamemarathi" formControlName="fathernamemarathi">
+  </div>
+
+  <div class="col-md-4">
+    <label for="salutation3">Salutation<sup>*</sup></label>
+  <select class="form-control" name="salutation3" id="salutation3" formControlName="salutation3">
+    <option value="mrs">Mrs.</option>
+    <option value="shrimati">Shrimati</option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="mothername" class="form-label">Mother Name (English)<sup>*</sup></label>
+    <input type="text" class="form-control" id="mothername" formControlName="mothername">
+  </div>
+  <div class="col-md-4">
+    <label for="mothernamemarathi" class="form-label">Mother Name (Marathi)<sup>*</sup></label>
+    <input type="text" class="form-control" id="mothernamemarathi" formControlName="mothernamemarathi">
+  </div>
+<hr>
+
+
+
+  <div class="col-md-6">
+    <label for="birthdate">Date of Birth</label>
+<input id="birthdate" class="form-control" formControlName="birthdate" type="date"/>
+  </div>
+  <div class="col-md-6">
+    <label for="age">Age</label>
+<input id="age" class="form-control" formControlName="age" type="number" />
+  </div>
+
+  <div class="col-md-6">
+    <label for="mobile">Mobile</label>
+<input id="mobile" class="form-control" formControlName="mobile" type="number" />
+  </div>
+  <div class="col-md-6">
+    <label for="aadhar">Aadhar no</label>
+<input id="aadhar" class="form-control" formControlName="aadhar" type="number" />
+  </div>
+  <hr>
+
+ <div class="alert alert-secondary" role="alert">
+    Bank Details :
+  </div>
+  <div class="col-md-4">
+      <label for="bankname" class="form-label">Bank name<sup>*</sup></label>
+      <input type="text" class="form-control" id="bankname" formControlName="bankname">
+  </div>
+
+  <div class="col-md-4">
+    <label for="accountno" class="form-label">Account no<sup>*</sup></label>
+    <input type="number" class="form-control" id="accountno" formControlName="accountno">
+</div>
+
+<div class="col-md-4">
+  <label for="ifccode" class="form-label">IFC Code<sup>*</sup></label>
+  <input type="text" class="form-control" id="ifccode" formControlName="ifccode">
+</div>
+
+<div class="col-md-4">
+  <label for="branch" class="form-label">Branch<sup>*</sup></label>
+  <input type="text" class="form-control" id="branch" formControlName="branch">
+</div>
+
+<div class="col-md-4">
+  <label for="document1">Aadhar Card</label>
+  <input type="file" class="form-control" id="document1" formControlName="document1">
+</div>
+
+<div class="col-md-4">
+  <label for="document2">Voter Card</label>
+  <input type="file" class="form-control" id="document2" formControlName="document2">
+</div>
+
+
+  <div class="col-12 text-center">
+    <!-- <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Save</button> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>

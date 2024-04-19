@@ -1,0 +1,245 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="row align-items-center w-100"> <!-- Align items vertically -->
+    <div class="col-auto">
+      <img src="/assets/img/IMG-20240401-WA0003.jpg" alt="Logo" class="navbar-logo" style="width: 50px; height: auto;"> <!-- Replace "your-small-logo.png" with the path to your small logo -->
+    </div>
+    <div class="col">
+      <span class="navbar-text text-truncate" style="max-width: 150px; font-size: 18px; color: white;">एकात्मिक आदिवासी प्रकल्प कार्यालय</span>
+    </div>
+    <div class="col-auto ml-auto d-none d-lg-flex justify-content-end"> <!-- Hide on small screens (mobile) -->
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="adjustFontSize('-')">अ-</span>
+      </div>
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="adjustFontSize()">अ</span>
+      </div>
+      <div>
+        <span class="btn btn-light" (click)="adjustFontSize('+')">अ+</span>
+      </div>
+    </div>
+    <div class="col-auto ml-auto d-none d-lg-flex justify-content-end">
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="toggleLanguage()">English</span>
+      </div>
+    </div>
+  </div>
+
+</nav>
+
+<div class="navbar-custom">
+<div class="row justify-content-center">
+  <!-- महाराष्ट्र शासन -->
+  <div class="col text-center mt-lg-1">
+    <small style="font-size: 20px; color: red; font-weight: bold;">महाराष्ट्र शासन</small>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Left image with space at the end -->
+  <div class="col-auto d-none d-md-block">
+    <img src="/assets/img/left_img.jpg" style="width: 95px; height: auto; margin-left: 10px;" alt="Left Image" class="mr-2">
+  </div>
+
+  <!-- एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार -->
+  <div class="col text-center mt-lg-5">
+    <h2 style="font-size: 55px; color: #0B1165; font-weight: bold;">एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार</h2>
+  </div>
+
+  <!-- Right image with space at the start -->
+  <div class="col-auto d-none d-md-block">
+    <img src="/assets/img/right_immg.jpg" style="width: 95px; height: auto; margin-right: 10px;" alt="Right Image" class="ml-2">
+  </div>
+</div>
+
+<div class="row mt-3">
+  <!-- Clickable Links -->
+  <div class="col text-center">
+    <div class="link-box">
+      <a href="#" class="nav-link">मुख्य पृष्ठ</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">आमुच्या बाबत</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">लाभ वितरित</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">नागरिकांचे सनद</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">योजना</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">डाउनलोड</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">प्रशिक्षण</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">इतर</a>
+    </div>
+    <div class="link-box">
+      <a href="login" class="nav-link">लॉगिन</a>
+    </div>
+    <div class="link-box">
+      <a href="#" class="nav-link">नोंदणी</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Marquee Strip -->
+<div class="marquee-strip">
+<div class="static-text">ताज्या बातम्या:-</div>
+<marquee behavior="scroll" direction="left">This is a marquee strip. Add your scrolling text here.</marquee>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="card col-6 mb-3" style="border-color: black;">
+      <div class="card-header Beneficiary">
+        <img src="/assets/img/degree.jpg" alt="Beneficiary Logo" class="logo"> Beneficiary Sign In
+      </div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+
+    <div class="text-center">
+
+      <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </div>
+    <a href="#" class="btn btn-link mt-1">Forget Password?</a>
+  </form>
+  <div class="text-end">
+    <button type="button" class="btn btn-primary" routerLink="/registration">New Registration</button>
+  </div>
+</div>
+
+<div class="card col-6 mb-3" style="border-color: black;">
+  <div class="card-header depart">
+    <img src="/assets/img/degree.jpg" alt="Department Logo" class="logo"> विभागीय लॉग इन
+  </div>
+  <form [formGroup]="loginForm2" (ngSubmit)="onSubmit2()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+    <div class="text-center">
+
+      <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </div>
+    <a href="#" class="btn btn-link mt-1">Forget Password?</a>
+  </form>
+</div>
+</div>
+
+</div>
+
+<div class="navbar-custom1 mt-2">
+  <div class="row justify-content-center">
+    <!-- महाराष्ट्र शासन -->
+    <div class="col text-center mt-lg-1">
+      <small style="font-size: 20px; color: red; font-weight: bold;">महाराष्ट्र शासन</small>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार -->
+    <div class="col text-center mt-lg-2">
+      <h2 style="font-size: 55px; color: #FF6161; font-weight: bold;">एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार</h2>
+      <h3 style="font-size: 35px; color: #18BF14; font-weight: bold;">विभागामार्फत दिल्या जाणाऱ्या योजना</h3>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-success table-bordered">
+        <tbody>
+          <!-- First set of tbody elements -->
+          <tr>
+            <td class="bullet-img"> अधिवास प्रमाणपत्र</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> बिरसा मुंडा सिंचन विहीर योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> शेळी पालन योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> दालमिल उपकरण संच मळणी यंत्र योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> शासकीय वस्ती ग्रह योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> अनुसूचित जमातीच्या मुला-मुलींसाठी प्रदेशात शिक्षणासाठी शिष्यवृत्तीयोजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> गाय/म्हशी वाटप योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> सुशिक्षित बेरोजगार भांडवल योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> इतर योजना</td>
+          </tr>
+          <!-- Add more rows here -->
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-success table-bordered">
+        <tbody>
+          <!-- Second set of tbody elements -->
+          <tr>
+            <td class="bullet-img"> रहिवाशी प्रमाणपत्र</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> विडिओ व फोटो शुटिंग कॅमेरा योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> तळपात्री योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> शिलाई मशीन योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> मिरची कांडप योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> कुकुट पालन योजना (बचत गटासाठी)</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> सबलीकरण योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> कोळपणी यंत्र वाटप योजना</td>
+          </tr>
+          <tr>
+            <td class="bullet-img"> इतर योजना</td>
+          </tr>
+          <!-- Add more rows here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+  <div class="text-white py-2 text-center container" style="background-color: #0B1165; font-weight: bold; font-size: 30px;">प्रस्तावित :- आदिवासी ग्राम विकास संशोधन व प्रशिक्षण संस्था, नंदुरबार
+  </div>

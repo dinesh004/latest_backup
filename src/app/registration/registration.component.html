@@ -1,0 +1,97 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="row align-items-center w-100"> <!-- Align items vertically -->
+    <div class="col-auto">
+      <img src="/assets/img/IMG-20240401-WA0003.jpg" alt="Logo" class="navbar-logo" style="width: 50px; height: auto;"> <!-- Replace "your-small-logo.png" with the path to your small logo -->
+    </div>
+    <div class="col">
+      <span class="navbar-text text-truncate" style="max-width: 150px; font-size: 18px; color: white;">एकात्मिक आदिवासी प्रकल्प कार्यालय</span>
+    </div>
+    <div class="col-auto ml-auto d-none d-lg-flex justify-content-end"> <!-- Hide on small screens (mobile) -->
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="adjustFontSize('-')">अ-</span>
+      </div>
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="adjustFontSize()">अ</span>
+      </div>
+      <div>
+        <span class="btn btn-light" (click)="adjustFontSize('+')">अ+</span>
+      </div>
+    </div>
+    <div class="col-auto ml-auto d-none d-lg-flex justify-content-end">
+      <div class="mr-3">
+        <span class="btn btn-light" (click)="toggleLanguage()">English</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Registration 13 - Bootstrap Brain Component -->
+<section class="bg-light py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+        <div class="card border border-light-subtle rounded-3 shadow-sm">
+          <div class="card-body p-3 p-md-4 p-xl-5">
+            <h2 class="text-center text-secondary mb-4">Registration</h2>
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+              <div class="row gy-2 overflow-hidden">
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="fullName" type="text" class="form-control" id="fullName" placeholder="Full Name">
+                    <label for="fullName" class="form-label">Full Name</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email" class="form-label">Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="password" class="form-label">Create Password</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="aadharCardNo" type="text" class="form-control" id="aadharCardNo" placeholder="Aadhar Card No">
+                    <label for="aadharCardNo" class="form-label">Aadhar Card No</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="mobileNo" type="text" class="form-control" id="mobileNo" placeholder="Mobile No">
+                    <label for="mobileNo" class="form-label">Mobile No</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="birthdate" type="date" class="form-control" id="birthdate" placeholder="Date of Birth">
+                    <label for="birthdate" class="form-label">Date of Birth</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input formControlName="profilePic" type="file" class="form-control" id="profilePic" (change)="onFileSelected($event)">
+                    <label for="profilePic" class="form-label">Profile Picture Upload</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="d-grid my-3">
+                    <button class="btn btn-primary btn-lg" type="submit">Sign up</button>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="m-0 text-secondary text-center">Already have an account? <a routerLink="/login" class="link-primary text-decoration-none">Login</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

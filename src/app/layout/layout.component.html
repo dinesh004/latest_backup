@@ -1,0 +1,328 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="row align-items-center w-100"> <!-- Align items vertically -->
+      <div class="col-auto">
+        <img src="/assets/img/IMG-20240401-WA0003.jpg" alt="Logo" class="navbar-logo" style="width: 50px; height: auto;"> <!-- Replace "your-small-logo.png" with the path to your small logo -->
+      </div>
+      <div class="col">
+        <span class="navbar-text text-truncate" style="max-width: 150px; font-size: 18px; color: white;">एकात्मिक आदिवासी प्रकल्प कार्यालय</span>
+      </div>
+      <div class="col-auto ml-auto d-none d-lg-flex justify-content-end"> <!-- Hide on small screens (mobile) -->
+        <div class="mr-3">
+          <span class="btn btn-light" (click)="adjustFontSize('-')">अ-</span>
+        </div>
+        <div class="mr-3">
+          <span class="btn btn-light" (click)="adjustFontSize()">अ</span>
+        </div>
+        <div>
+          <span class="btn btn-light" (click)="adjustFontSize('+')">अ+</span>
+        </div>
+      </div>
+      <div class="col-auto ml-auto d-none d-lg-flex justify-content-end">
+        <div class="mr-3">
+          <span class="btn btn-light" (click)="toggleLanguage()">English</span>
+        </div>
+      </div>
+    </div>
+
+</nav>
+
+<div class="navbar-custom">
+  <div class="row justify-content-center">
+    <!-- महाराष्ट्र शासन -->
+    <div class="col text-center mt-lg-1">
+      <small style="font-size: 20px; color: red; font-weight: bold;">महाराष्ट्र शासन</small>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Left image with space at the end -->
+    <div class="col-auto d-none d-md-block">
+      <img src="/assets/img/left_img.jpg" style="width: 95px; height: auto; margin-left: 10px;" alt="Left Image" class="mr-2">
+    </div>
+
+    <!-- एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार -->
+    <div class="col text-center mt-lg-5">
+      <h2 style="font-size: 55px; color: #0B1165; font-weight: bold;">एकात्मिक आदिवासी प्रकल्प कार्यालय, नंदुरबार</h2>
+    </div>
+
+    <!-- Right image with space at the start -->
+    <div class="col-auto d-none d-md-block">
+      <img src="/assets/img/right_immg.jpg" style="width: 95px; height: auto; margin-right: 10px;" alt="Right Image" class="ml-2">
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <!-- Clickable Links -->
+    <div class="col text-center">
+      <div class="link-box">
+        <a routerLink="" class="nav-link">मुख्य पृष्ठ</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">आमुच्या बाबत</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">लाभ वितरित</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">नागरिकांचे सनद</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">योजना</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">डाउनलोड</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">प्रशिक्षण</a>
+      </div>
+      <div class="link-box">
+        <a href="#" class="nav-link">इतर</a>
+      </div>
+      <div class="link-box">
+        <a routerLink="/login">लॉगिन</a>
+      </div>
+      <div class="link-box">
+        <a routerLink="/registration">नोंदणी</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Marquee Strip -->
+<div class="marquee-strip">
+  <div class="static-text">ताज्या बातम्या:-</div>
+  <marquee behavior="scroll" direction="left">This is a marquee strip. Add your scrolling text here.</marquee>
+</div>
+
+<!-- Image Section -->
+<div>
+  <div class="row">
+    <!-- Large background image -->
+
+      <img src="/assets/img/bammer.jpg" style="width: 100%; height: auto;" alt="Background Image">
+
+      <!-- First person's image and name overlay -->
+      <!-- <div style="position: absolute; bottom: 20px; left: 20px; display: flex; flex-direction: column; align-items: center;">
+        <img src="/assets/img/vijaykumar.jpg" style="width: 130px; height: 130px;" alt="Person 1 Image">
+        <div style="color: black; font-size: 18px; font-weight: bold; background-color:#FBC79F; padding: 10px; border-radius: 5px; margin-top: 1px;">
+          <div>(मा. पालकमंत्री)</div>
+          <div>डॉ. विजयकुमार गावित</div>
+        </div>
+      </div> -->
+
+      <!-- Second person's image and name overlay -->
+      <!-- <div style="position: absolute; bottom: 20px; right: 20px; display: flex; flex-direction: column; align-items: center;">
+        <img src="/assets/img/khatri.jpg" style="width: 130px; height: 130px;" alt="Person 2 Image">
+        <div style="color: black; font-size: 18px; font-weight: bold; background-color:#FBC79F; padding: 10px; border-radius: 5px; margin-top: 1px;">
+          <div>(मा. जिल्हा अधिकारी)</div>
+          <div>प्र.भ्र.से. मनीषा खत्री</div>
+        </div>
+      </div> -->
+
+  </div>
+</div>
+
+
+<div class="row">
+<div class="col-4">
+<div class="card">
+  <div class="card-header">
+    कार्यालय पत्ता
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p></p>
+    </blockquote>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+दूरध्वनी क्रमांक
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p></p>
+    </blockquote>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    कॉल सेंटर क्रमांक
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p></p>
+    </blockquote>
+  </div>
+</div>
+</div>
+
+<div class="col-4">
+  <div class="card">
+    <p>
+      <a class="btn btn-custom col-6" style="background-color: #0B1165; color: white;" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample1">
+        मीडिया
+      </a>
+      <button class="btn btn-custom col-6" style="background-color: #0B1165; color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+        नवीन प्रकल्प
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample1">
+      <div class="card card-body" style="background-color: yellow;">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+    <div class="collapse" id="collapseExample2">
+      <div class="card card-body" style="background-color: yellow;">
+        Some placeholder content for the collapse component.
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card">
+      <div class="card-header">
+        आदिवासी विकास बद्दल
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0" style="font-size: smaller; font-weight: bold;">
+          <p>आदिवासींच्या कल्याणाच्या योजनांची परिणामकारक अंमलबजावणी करण्यासाठी सन १९७२ मध्ये समाजकल्याण विभागांतर्गत आदिवासी विकास संचलनालयाची स्थापना करण्यात आली होती. त्यानंतर १९७६ साली आदिवासी विकास आयुक्तालय सुरु करण्यात आले. दि. २२ एप्रिल १९८३ रोजी स्वतंत्र आदिवासी विकास विभागाची स्थापना करण्यात आली आणि १९८४ पासून आदिवासी विकास विभाग स्वतंत्रपणे कार्यरत आहे.
+
+            आदिवासी विकास विभागाच्या बळकटीकरणाकरिता सन १९९२ मध्ये आदिवासी विकास संचलनालय हे आदिवासी विकास आयुक्तालयात विलीन करण्यात आले.आदिवासी विकास विभागांतर्गत ठाणे, नाशिक, अमरावती व नागपूर येथे चार अपर आयुक्त व २९ एकात्मिक आदिवासी विकास प्रकल्प कार्यालये असून त्यांच्या मार्फत मागासवर्गीय कल्याणाच्या राज्य व केंद्र शासनाच्या योजनांची अंमलबजावणी केली जाते. या योजनांतर्गत सामाजिक कल्याण, आर्थिक कल्याण. आदिवासींच्या कल्याणाच्या योजनांची परिणामकारक अंमलबजावणी करण्यासाठी सन १९७२ मध्ये समाजकल्याण विभागांतर्गत आदिवासी विकास संचलनालयाची स्थापना करण्यात आली होती.</p>
+        </blockquote>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/assets/img/degree.jpg" class="img-fluid rounded-start" alt="degree">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;">इशिष्यवृत्ती</h5>
+            <p class="card-text">ऑनलाईन शिष्यवृत्ती व्यवस्थापन प्रणाली</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/assets/img/star.jpg" class="img-fluid rounded-start" alt="star">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;">आदी प्रमाण प्रणाली</h5>
+            <p class="card-text">आदिवासी अनुसूचित जमाती प्रमाणपत्र पडताळणी प्रणाली</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/assets/img/leaf.jpg" class="img-fluid rounded-start" alt="leaf">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;">मुक्त निधी योजना</h5>
+            <p class="card-text">पेसा ग्रामपंचायत पुस्तिका</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/assets/img/user.jpg" class="img-fluid rounded-start" alt="user">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" style="font-weight: bold;">योजना</h5>
+            <p class="card-text">आदिवासींसाठी प्रमुख विविध योजना </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body text-center align-items-center mt-6" style="background-color: #0B1165; color: yellow; font-weight: bold; font-size: 41px">
+        महत्वाच्या व्यक्ती
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/assets/img/Eknath-Shinde.jpg" class="img-fluid rounded-start" alt="Eknath-Shinde">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">श्री.एकनाथ शिंदे</h5>
+              <p class="card-text">माननीय मुख्यमंत्री, महाराष्ट्र शासन</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/assets/img/devendra.jpg" class="img-fluid rounded-start" alt="devendra">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">श्री. देवेंद्र फडणवीस</h5>
+              <p class="card-text">माननीय उपमुख्यमंत्री, महाराष्ट्र शासन</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/assets/img/Dr_Pradeep.jpg" style="height: 100px; width: 100px;" class="img-fluid rounded-start" alt="Dr_Pradeep">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">श्री.प्रदिपकुमार व्यास,(भाप्रसे)</h5>
+              <p class="card-text">अ. मु. स, आदिवासी विकास विभाग </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
